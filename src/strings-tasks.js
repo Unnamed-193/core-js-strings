@@ -377,7 +377,7 @@ function findLongestWord(sentence) {
  */
 function reverseWords(str) {
   const words = str.split(' ');
-  const reverseWord = words.map(function (word) {
+  const reverseWord = words.map(function reserve(word) {
     return word.split('').reverse().join('');
   });
   const reverseStr = reverseWord.join(' ');
@@ -397,7 +397,7 @@ function reverseWords(str) {
  *   invertCase('12345') => '12345'
  */
 function invertCase(str) {
-  return str.replace(/[a-zA-Z]/g, function (char) {
+  return str.replace(/[a-zA-Z]/g, function invert(char) {
     if (char === char.toLowerCase()) {
       return char.toUpperCase();
     }
